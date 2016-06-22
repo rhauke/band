@@ -1,0 +1,241 @@
+/* ===================================================== */
+/* Extra small devices (phones, less than 320px)         */
+/* No media query since this is the default in Bootstrap */
+/* ===================================================== */
+body {
+	padding: 0;
+	margin: 50px 0 0 0;
+}
+/* Prevent text hiding behind navbar */
+#PageOne, #PageTwo, #PageThree, #PageFour, #page-top {
+	margin-top: -50px;
+	padding-top: 50px;
+}
+/* Secure correct behaviour in older browsers */
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+.marker {
+	background-color: purple;
+	color:white;
+}
+.card {
+	width: 100%;
+	margin: auto;
+	background-color: #cce6ff;
+}
+.card__img {
+	width: 100%;
+}
+.card__text {
+	overflow: hidden;
+}
+.aside1__img {
+	width: 60%;
+}
+.navbar-fixed-bottom {
+	background-color: transparent;
+	border: none;
+	height: 20px;
+}
+#nav__gotoTop {
+	visibility: hidden;
+}
+#nav__gotoTop {
+	font-size: 2.5em;
+	margin-top: 15px;
+	background: #cce6ff; /*#606061; */
+	opacity: 0.8;
+	color: white;
+	height: 35px;
+	width: 40px;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+/* ================= */
+/* T E S T   A R E A */
+/* =============================================================== */
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* =============================================================== */
+@media (min-width:320px) { 
+	.marker {
+		background-color: blue;
+	}
+} 
+/* ============================================= */
+/* smartphones, Android phones, landscape iPhone */ 
+/* ============================================= */
+@media (min-width:480px) { 
+	.marker {
+		background-color: green;
+	}
+	.card {
+		max-width: 320px;
+	}
+}
+/* ===================================================== */
+/* Small devices (my iPhone, landscape)                  */
+/* ===================================================== */
+@media only screen and (min-width: 568px) { 
+	.marker {
+		background-color: yellow;
+		color: blue;
+	}
+
+}
+/* ===================================================== */
+/* col-sm-*	Small devices (tablets, 768px and up)        */
+/* ===================================================== */
+@media only screen and (min-width: 768px) { 
+	.marker {
+		background-color: orange;
+	}
+}	
+/* ===================================================== */
+/* col-md-* big landscape tablets, laptops, and desktops */
+/* ===================================================== */
+@media (min-width:992px) {
+	.marker {
+		background-color: red;
+	}
+}
+/* ==================================== */
+/* col-lg-* hi-res laptops and desktops */
+/* ==================================== */
+@media (min-width:1200px) {
+	.marker {
+		background-color: pink;
+	}
+}
+/* ================================================ */
+/* Print styling                                    */
+/* http://daneveland.com/content/printing-bootstrap */
+/* ================================================ */
+@media print {
+
+[class*="col-sm-"] {
+float: left;
+}
+
+[class*="col-xs-"] {
+float: left;
+}
+
+.col-sm-12, .col-xs-12 { 
+width:100% !important;
+}
+
+.col-sm-11, .col-xs-11 { 
+width:91.66666667% !important;
+}
+
+.col-sm-10, .col-xs-10 { 
+width:83.33333333% !important;
+}
+
+.col-sm-9, .col-xs-9 { 
+width:75% !important;
+}
+
+.col-sm-8, .col-xs-8 { 
+width:66.66666667% !important;
+}
+
+.col-sm-7, .col-xs-7 { 
+width:58.33333333% !important;
+}
+
+.col-sm-6, .col-xs-6 { 
+width:50% !important;
+}
+
+.col-sm-5, .col-xs-5 { 
+width:41.66666667% !important;
+}
+
+.col-sm-4, .col-xs-4 { 
+width:33.33333333% !important;
+}
+
+.col-sm-3, .col-xs-3 { 
+width:25% !important;
+}
+
+.col-sm-2, .col-xs-2 { 
+width:16.66666667% !important;
+}
+
+.col-sm-1, .col-xs-1 { 
+width:8.33333333% !important;
+}
+						  
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+float: left !important;
+}
+
+body {
+margin: 0;
+padding: 0 !important;
+min-width: 768px;
+}
+
+.container {
+width: auto;
+min-width: 750px;
+}
+
+body {
+font-size: 10px;
+}
+
+a[href]:after {
+content: none;
+}
+
+.noprint, 
+div.alert, 
+header, 
+group-media, 
+.btn, 
+.footer, 
+form, 
+#comments, 
+.nav, 
+ul.links.list-inline,
+ul.action-links {
+display:none !important;
+}
+}
