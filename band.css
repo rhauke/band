@@ -59,7 +59,7 @@ header, section, footer, aside, nav, main, article, figure {
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-	width: 70%;
+	width: 100%;
 	margin: auto;
 }
 /* ================= */
@@ -81,6 +81,11 @@ header, section, footer, aside, nav, main, article, figure {
 	}
 	.card {
 		max-width: 320px;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 75%;
+		margin: auto;
 	}
 }
 /* ===================================================== */
